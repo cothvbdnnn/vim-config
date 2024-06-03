@@ -64,7 +64,6 @@
     }
   ],
   "vim.foldfix": true,
-  "editor.lineNumbers": "relative",
   "vim.smartRelativeLine": true,
   "vim.startInInsertMode": true,
   "vim.overrideCopy": false,
