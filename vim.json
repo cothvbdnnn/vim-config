@@ -1,85 +1,82 @@
-  "vim.insertModeKeyBindings": [
-
+"vim.insertModeKeyBindings": [
     {
-
       "before": [
-
         "j",
-
         "k"
-
       ],
-
       "after": [
-
         "<Esc>"
-
       ]
-
     }
-
   ],
-
-  "vim.visualModeKeyBindingsNonRecursive": [
-
+  "vim.normalModeKeyBindings": [
     {
-
       "before": [
-
-        "shift+j"
-
+        "<Tab>"
       ],
-
       "commands": [
-
-        "editor.action.moveLinesDownAction"
-
+        "editor.action.indentLines"
       ]
-
     },
-
     {
-
       "before": [
-
-        "shift+k"
-
+        "<Shift+Tab>"
       ],
-
       "commands": [
-
-        "editor.action.moveLinesUpAction"
-
+        "editor.action.outdentLines"
       ]
-
     }
-
   ],
-
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<Tab>"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<Shift+Tab>"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "shift+j"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "shift+k"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    }
+  ],
   "vim.foldfix": true,
-
   "editor.lineNumbers": "relative",
-
   "vim.smartRelativeLine": true,
-
   "vim.startInInsertMode": true,
-
   "vim.overrideCopy": false,
-
   "vim.handleKeys": {
-
     "<C-c>": false,
-
     "<C-x>": false,
-
     "<C-v>": false,
-
     "<C-k>": false,
-
     "<C-w>": false,
-
     "<C-d>": false,
-
-    "<C-a>": false
-
+    "<C-a>": false,
+    "<C-p>": false,
+    "<C-i>": false,
   },
+  "vim.useSystemClipboard": false,
